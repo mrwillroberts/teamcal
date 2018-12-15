@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Calendar</title>
+    <style>
+
+        body {
+            background: #3e8e79;
+            font-family: Courier;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .name {
+            width: 100px;
+        }
+        .date {
+            border-style: solid solid none solid;
+        }
+        .day {
+            border-style: none solid;
+        }
+        th, td {
+            border: 1px solid black;
+            background: white;
+        }
+
+        .no-border {
+            border: 0px;
+            background: #3e8e79
+        }
+
+        .weekend {
+            background: black;
+            width: 5px;
+        }
+
+        th,td {
+            width: 50px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+
+        .support {
+            background-color: #f9f8a4;
+        }
+
+        .holiday {
+            background-color: #95b3e5;
+        }
+
+        td {
+            height: 50px;
+            <!--border-radius: 5px;-->
+            border-style: solid solid;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://jqueryui.com/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>
+
+    <script src="team_calendar.js"></script>
+</head>
+<body>
+<table id="caltable">
+</table>
+</body>
+</html>

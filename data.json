@@ -1,0 +1,12 @@
+{
+"start_date":"2018-12-10",
+"end_date":"2018-12-21",
+"members": [
+  {"name": "Person A", "events": [{"start_date":"2018-12-10", "end_date":"2018-12-14", "type":"support"}]},
+  {"name": "Person B", "events": [{"start_date":"2018-12-14", "end_date":"2018-12-18", "type":"holiday"}]},
+  {"name": "Person C"},
+  {"name": "Person D"},
+  {"name": "Person E"},
+  {"name": "Person F"}
+]
+}
