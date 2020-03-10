@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" href="team_status.css">
+</head>
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<body>
+<div id="app">
+    <h2>Team Presence Today</h2>
+    <table>
+        <tr>
+            <th>WFH:</th>
+            <td v-if="person.status == 'WFH'" v-for="person in people">
+                <img class="icon" height="70px" width="70px" :src="person.img" :title="person.name" />
+            </td>
+        </tr>
+        <tr>
+            <th>In Office:</th>
+            <td v-if="person.status == 'Office'" v-for="person in people">
+                <img class="icon" height="70px" width="70px" :src="person.img" :title="person.name" />
+            </td>
+        </tr>
+        <tr>
+            <th>Holiday:</th>
+            <td v-if="person.status == 'Holiday'" v-for="person in people">
+                <img class="icon" height="70px" width="70px" :src="person.img" :title="person.name" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
