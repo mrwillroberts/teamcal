@@ -10,19 +10,30 @@
             font-family: Courier;
         }
         table {
-            border-collapse: collapse;
+            border-collapse: separate !important;
+            border-spacing: 0;
         }
         .name {
             width: 100px;
+            background: #e8e8e8;
+            border: 1px solid black;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-style: none solid solid solid;
         }
         .date {
-            border-style: solid solid none solid;
+            border-style: solid solid none none;
+            border-collapse: collapse;
+            background: #e8e8e8;
         }
         .day {
-            border-style: none solid;
+            border-style: none solid solid none;
+            border-collapse: collapse;
+            background: #e8e8e8;
         }
         th, td {
             border: 1px solid black;
+            border-style: none solid solid none;
             background: white;
         }
 
@@ -67,8 +78,17 @@
     <script src="https://jqueryui.com/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>
 
     <script src="team_calendar.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!--<link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">-->
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </head>
 <body>
+<p>Date: <input type="text" id="datepicker"></p>
+
 <table id="caltable">
 </table>
 </body>
